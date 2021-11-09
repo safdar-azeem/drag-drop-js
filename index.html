@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-min.css">
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container between-center mt-9 flex-column " style="height: 60vh;">
+        <h1 class="text-center fw-bold display-4 mt-9">Drag And drop</h1>
+        <ul class="list-group flex-row mt-9">
+            <li class="list-group-item p-0 me-7" data-index="1">
+                <div draggable="true" class="box center cursor-pointer bg-danger rounded-2">
+                    <p class="fs-19">1</p>
+                </div>
+            </li>
+            <li class="list-group-item p-0 me-7" data-index="2">
+                <div draggable="true" class="box center cursor-pointer bg-success rounded-2">
+                    <p class="fs-19">2</p>
+                </div>
+            </li>
+            <li class="list-group-item p-0 me-7" data-index="3">
+                <div draggable="true" class="box center cursor-pointer bg-info rounded-2">
+                    <p class="fs-19">3</p>
+                </div>
+            </li>
+            <li class="list-group-item p-0 me-7" data-index="4">
+                <div draggable="true" class="box center cursor-pointer bg-primary rounded-2">
+                    <p class="fs-19">4</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
